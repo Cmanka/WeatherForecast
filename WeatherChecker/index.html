@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Checker</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@449&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main_container">
+      <div class="header">
+        <div class="title_content">
+          <div class="circle"></div>
+          <p>Weather Checker</p>
+        </div>
+        <div class="picked_city">
+          <form class="city_form">
+            <p>
+              <label for="">Country:</label><br />
+              <select id="country" type="text">
+                <option disabled selected>Select country</option>
+              </select>
+            </p>
+            <p>
+              <label for="">City:</label><br />
+              <select id="city" type="text">
+                <option disabled selected>Select city</option>
+              </select>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="top_content">
+        <div class="selected_settings">
+          <p class="settings_title">Select the setting of interest</p>
+          <form class="choice_block">
+            <p>
+              <input type="radio" checked="true" name="setting" id="days5" />
+              <label for="days5">5 day weather forecast</label>
+            </p>
+            <p>
+              <input type="radio" name="setting" id="geolocation" />
+              <label for="geolocation"
+                >Find out the weather <br />
+                for the 24 hours by geolocation</label
+              >
+            </p>
+          </form>
+        </div>
+        <div class="main_information"></div>
+      </div>
+      <div class="bottom_content">
+        <div class="today_weather">
+          <div class="title_block"></div>
+          <div class="weather_block">
+            <div class="temperature_block"></div>
+            <div class="detailed_block"></div>
+          </div>
+        </div>
+        <div class="contacts">
+          <div class="contacts_panel">
+            <div class="telegram">
+              <img src="./images/telegram.png" />
+              <a href="">telegram/Cmanka</a>
+            </div>
+            <div class="github">
+              <img src="./images/github.png" />
+              <a href="">github/Cmanka</a>
+            </div>
+            <div class="gmail">
+              <img src="./images/gmail.png" />
+              <a href="">offatrubkin@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./js-components/index.js"></script>
+  </body>
+</html>
